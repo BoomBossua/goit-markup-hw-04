@@ -1,6 +1,10 @@
 html {
   box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+}
 *,
 *::after,
 *::before {
@@ -151,7 +155,6 @@ body {
   color: var(--second-text-color);
   display: flex;
   align-items: center;
-  /* margin-left: 305px; */
 }
 
 .icon-mail {
@@ -239,12 +242,12 @@ body {
   line-height: 1.87;
   text-align: center;
   border: none;
-  border-radius: 3px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
   padding: 10px 32px;
   color: var(--heder-text-color);
   letter-spacing: var(--third-letter-spacing);
   background-color: var(--main-btn-color);
-  border: none;
   border-radius: 3px;
   cursor: pointer;
   padding: 10px 32px;
@@ -253,7 +256,7 @@ body {
 
 .button:hover,
 .button:focus {
-  color: var(--main-btn-color);
+  background-color: #757575;
 }
 
 /* features section */
@@ -275,8 +278,7 @@ body {
 }
 
 .icon-features-item {
-  width: 270px;
-  height: 120px;
+  display: flex;
   padding: 25px 100px;
   align-items: center;
   background-color: #f5f4fa;
@@ -413,6 +415,8 @@ body {
 
   justify-content: center;
   align-items: center;
+
+  margin-bottom: 30px;
 }
 
 .social-network-item {
@@ -421,9 +425,7 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-
   margin-right: 10px;
-  margin-bottom: 30px;
 }
 
 .social-network-item :not(:last-child) {
@@ -458,6 +460,10 @@ body {
 
 /* =================ПОСТОЯННЫЕ КЛИЕНТЫ=============== */
 
+.clients {
+  padding: 94px 0;
+}
+
 .clients-list {
   display: flex;
 }
@@ -479,8 +485,6 @@ body {
   height: 92px;
   justify-content: center;
   align-items: center;
-
-  margin-bottom: 94px;
 }
 
 .clients-item + .clients-item {
@@ -621,7 +625,6 @@ body {
   align-items: center;
 
   margin-right: 10px;
-  margin-bottom: 30px;
 }
 
 .footer-social-network-item :not(:last-child) {
@@ -637,7 +640,7 @@ body {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  fill: #afb1b8;
+  fill: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -695,7 +698,8 @@ body {
   border: none;
 }
 
-.btn-nav:hover {
+.btn-nav:hover,
+.btn-nav:focus {
   background-color: #2196f3;
 }
 
@@ -706,6 +710,7 @@ body {
   flex-wrap: wrap;
   margin-left: 0;
   margin-top: 0px;
+  padding-bottom: 94px;
 }
 
 .portfolio-item {
@@ -723,6 +728,12 @@ body {
 }
 .portfolio-item:nth-child(3n + 1) {
   margin-left: 0px;
+}
+
+.portfolio-link:hover,
+.portfolio-link :focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-title {
